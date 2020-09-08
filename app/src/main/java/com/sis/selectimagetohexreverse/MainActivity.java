@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
                         long size=file.length()/1024;
                         int file_size = Integer.parseInt(String.valueOf(file.length()/1024));
                         Log.e("Size",String.valueOf(file_size));
-                        if(file_size>8) {
+                        if(file_size>500) {
                             Toast.makeText(getApplicationContext(),"Image Size Should be Less then 5kb",Toast.LENGTH_LONG).show();
 
                             // If the image is higher than max number of bytes, start all over again.
